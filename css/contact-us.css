@@ -13,6 +13,7 @@
 }
 .contact-us .contact-data .contact-data__section a:hover {
   text-decoration: underline;
+  color: rgb(99, 69, 50);
 }
 .contact-us .contact-data .contact-data__section:first-of-type {
   margin-bottom: 4vw;
@@ -31,11 +32,15 @@
   -moz-column-gap: 5%;
        column-gap: 5%;
 }
+.personal-data div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .personal-data div input {
   width: 100%;
 }
 .personal-data div label {
-  display: block;
+  color: rgb(99, 69, 50);
 }
 
 .personal-data {

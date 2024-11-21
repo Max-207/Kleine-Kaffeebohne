@@ -17,6 +17,7 @@
 }
 .hero div p {
   margin: 0;
+  color: rgb(255, 255, 255);
 }
 .hero div p.txt-default {
   margin-top: 1rem;
