@@ -1,0 +1,73 @@
+.contact-us {
+  margin-top: 6vw;
+}
+.contact-us .contact-info {
+  margin-bottom: 6vw;
+}
+.contact-us .contact-info .h2 {
+  margin-top: 0;
+}
+.contact-us .contact-data .contact-data__section div p {
+  margin: 0 0 1vw 0;
+  pointer-events: none;
+}
+.contact-us .contact-data .contact-data__section a:hover {
+  text-decoration: underline;
+  color: rgb(99, 69, 50);
+}
+.contact-us .contact-data .contact-data__section:first-of-type {
+  margin-bottom: 4vw;
+}
+
+.contact-form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personal-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.personal-data div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.personal-data div input {
+  width: 100%;
+}
+.personal-data div label {
+  color: rgb(99, 69, 50);
+}
+
+.personal-data {
+  margin-top: 3vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 1rem;
+}
+.personal-data div input {
+  max-width: 10rem;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0.5rem;
+}
+.personal-data div textarea {
+  width: 100%;
+}
+
+@media only screen and (min-width: 720px) {
+  .contact-us {
+    display: flex;
+    -moz-column-gap: 20%;
+         column-gap: 20%;
+    align-items: center;
+  }
+  .contact-us .contact-info {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=contact-us.css.map */
