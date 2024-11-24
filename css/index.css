@@ -14,6 +14,7 @@
   position: absolute;
   top: 50%;
   translate: 0 -50%;
+  background-color: rgba(99, 69, 50, 0.5);
 }
 .hero div p {
   margin: 0;
@@ -34,6 +35,33 @@
   gap: 10px;
   grid-template-columns: repeat(1fr);
 }
+.products .product-dialog {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid black;
+}
+.products .product-dialog div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.products .product-dialog div p {
+  margin: 0;
+}
+.products .product-dialog div .product-dialog__close {
+  font-size: calc(2vw + 1rem);
+  cursor: pointer;
+}
+.products .product-dialog img {
+  vertical-align: middle;
+  width: calc(40vw + 10rem);
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .products .product {
   width: 70%;
   margin: 3rem auto 0;
@@ -47,7 +75,7 @@
   cursor: pointer;
 }
 .products .product img {
-  width: max(5rem, 10vw);
+  width: max(7rem, 12vw);
   border-radius: 50%;
   aspect-ratio: 1/1;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
