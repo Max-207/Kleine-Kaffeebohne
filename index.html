@@ -6,12 +6,24 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/contact-dropdown.js" defer></script>
+    <script src="js/product-dialog.js" defer></script>
+    <script src="js/hamburger-menu.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-pic">
             <img src="Images/general/logo.png" alt="">
         </div>
+        <div class="header-dropdown">
+            <a href="index.html" class="current-page">Home</a>
+            <a href="about-us.html">Über uns</a>
+            <a href="contact-us.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <button class="hamburger-menu">
+            <hr><hr><hr>
+        </button>
         <div class="buttons">
             <button class="btn-aboutus txt-smaller" onclick="location.href = 'about-us.html'">Über uns</button>
             <button class="btn-contact txt-smaller" onclick="location.href = 'contact-us.html'">Kontakt</button>
@@ -29,6 +41,13 @@
         <p class="txt-default">In unserem Foodtruck bieten wir eine köstliche Auswahl an Leckereien, darunter unsere Kaffeespezialitäten, köstliche Kuchen und leckere Muffins. Jedes Gericht wird mit Liebe und Sorgfalt zubereitet.</p>
     </section>
     <section class="products">
+        <dialog class="product-dialog">
+            <div>
+                <p class="h2"></p>
+                <p class="product-dialog__close">&#x2715;</p>
+            </div>
+            <img src="" alt="">
+        </dialog>
         <button class="product">
             <img src="Images/home/home-kaffee.png" alt="">
             <p class="h3">Kaffee</p>
@@ -75,10 +94,34 @@
         </div>
         <hr>
         <div class="footer-bottom">
-            <p class="txt-smaller">© 2024 Food Truck Festival. All rights reserved.</p>
-            <p class="txt-smaller">Privacy Policy</p>
-            <p class="txt-smaller">Terms and Conditions</p>
-            <p class="txt-smaller">Cookie Policy</p>
+            <a class="txt-smaller" href="index.html">Kleine Kaffeebohne</a>
+            <a class="txt-smaller" href="impressum.html">Impressum</a>
+            <a class="txt-smaller" href="about-us.html">Über uns</a>
+            <div class="footer-contact">
+                <div class="contact-dropdown hidden">
+                    <div>
+                        <a href="mailto:kleine-kaffeebohne@web.de" class="txt-smaller">
+                            Email: kleine-kaffeebohne@web.de
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+4917614971174" class="txt-smaller">
+                            Tel: +49 176-14971174
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="txt-smaller">
+                            Instagram: @kleine-Kaffeebohne
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="txt-smaller">
+                            Facebook: @kleine-Kaffeebohne
+                        </a>
+                    </div>
+                </div>
+                <a class="txt-smaller" href="contact-us.html">Kontakt</a>
+            </div>
         </div>
     </footer>
 </body>
