@@ -6,12 +6,23 @@
     <title>About us</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/about-us.css">
+    <script src="js/contact-dropdown.js" defer></script>
+    <script src="js/hamburger-menu.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-pic">
             <img src="Images/general/logo.png" alt="">
         </div>
+        <div class="header-dropdown">
+            <a href="index.html">Home</a>
+            <a href="about-us.html" class="current-page">Über uns</a>
+            <a href="contact-us.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <button class="hamburger-menu">
+            <hr><hr><hr>
+        </button>
         <div class="buttons">
             <button class="btn-home txt-smaller" onclick="location.href = 'index.html'">Home</button>
             <button class="btn-contact txt-smaller" onclick="location.href = 'contact-us.html'">Kontakt</button>
@@ -100,10 +111,34 @@
         </div>
         <hr>
         <div class="footer-bottom">
-            <p class="txt-smaller">© 2024 Food Truck Festival. All rights reserved.</p>
-            <p class="txt-smaller">Privacy Policy</p>
-            <p class="txt-smaller">Terms and Conditions</p>
-            <p class="txt-smaller">Cookie Policy</p>
+            <a class="txt-smaller" href="index.html">Kleine Kaffeebohne</a>
+            <a class="txt-smaller" href="impressum.html">Impressum</a>
+            <a class="txt-smaller" href="about-us.html">Über uns</a>
+            <div class="footer-contact">
+                <div class="contact-dropdown hidden">
+                    <div>
+                        <a href="mailto:kleine-kaffeebohne@web.de" class="txt-smaller">
+                            Email: kleine-kaffeebohne@web.de
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+4917614971174" class="txt-smaller">
+                            Tel: +49 176-14971174
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="txt-smaller">
+                            Instagram: @kleine-Kaffeebohne
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="txt-smaller">
+                            Facebook: @kleine-Kaffeebohne
+                        </a>
+                    </div>
+                </div>
+                <a class="txt-smaller" href="contact-us.html">Kontakt</a>
+            </div>
         </div>
     </footer>
 </body>
