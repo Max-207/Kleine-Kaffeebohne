@@ -22,7 +22,9 @@
        column-gap: 1vw;
   margin-left: auto;
   margin-right: auto;
+  min-width: 23rem;
   width: 70vw;
+  min-height: 11.5rem;
   height: 35vw;
 }
 .images img {
@@ -105,8 +107,6 @@
   .our-values .our-values__txt ul li {
     text-wrap: nowrap;
   }
-}
-@media only screen and (min-width: 600px) {
   .contact {
     display: flex;
     align-items: center;
