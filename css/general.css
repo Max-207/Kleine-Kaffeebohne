@@ -95,7 +95,6 @@ a {
 }
 
 .buttons {
-  display: none;
   -moz-column-gap: min(2vw, 1.3rem);
        column-gap: min(2vw, 1.3rem);
 }
@@ -141,6 +140,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5vw;
+}
+
+header .buttons {
+  display: none;
 }
 
 .logo-pic {
