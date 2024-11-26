@@ -10,7 +10,7 @@ footerContactElement.addEventListener("mouseenter", () => {
 footerContactElement.addEventListener("mouseleave", () => {
     setTimeout(() => {
         if (!isInsideDropdown)contactDropdownElement.classList.add("hidden");
-      }, 750); 
+      }, 500); 
 });
 
 contactDropdownElement.addEventListener("mouseenter", () => {
@@ -22,5 +22,5 @@ contactDropdownElement.addEventListener("mouseleave", () => {
     isInsideDropdown = false;
     setTimeout(() => {
         contactDropdownElement.classList.add("hidden");
-      }, 750); 
+      }, 500); 
 });
