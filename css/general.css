@@ -12,7 +12,7 @@ a {
 }
 
 .h1 {
-  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-size: clamp(1.75rem, 5.5vw, 4rem);
   font-weight: 600;
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 .txt-default {
-  font-size: clamp(1rem, 1.35vw, 2rem);
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
 }
 
 .txt-smaller {
