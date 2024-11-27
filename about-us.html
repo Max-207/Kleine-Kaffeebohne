@@ -1,122 +1,145 @@
-.hero {
-  margin-top: 6vw;
-}
-
-.our-values .pic-top {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
-}
-.our-values .pic-top img {
-  width: 100%;
-  max-width: 100vw;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-}
-.our-values .our-values__txt {
-  margin-top: 6vw;
-}
-
-.images {
-  display: flex;
-  -moz-column-gap: 1vw;
-       column-gap: 1vw;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 25rem;
-  width: 80vw;
-  min-height: 12.5rem;
-  height: 40vw;
-}
-.images img {
-  width: 100%;
-}
-.images .images-big {
-  flex: 1;
-  height: 100%;
-}
-.images .images-big img {
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 5vw 0 0 5vw;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.images .images-sec {
-  flex: 1;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 1vw;
-}
-.images .images-sec .images-sec-top {
-  display: flex;
-  -moz-column-gap: 1vw;
-       column-gap: 1vw;
-}
-.images .images-sec .images-sec-top div {
-  flex: 1;
-}
-.images .images-sec .images-sec-top div img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-}
-.images .images-sec .images-sec-top div:last-of-type img {
-  border-top-right-radius: 5vw;
-}
-.images .images-sec .images-sec-bottom {
-  overflow: hidden;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  border-bottom-right-radius: 5vw;
-}
-.images .images-sec .images-sec-bottom img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.contact .contact-img {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: calc(6vw + 2rem) auto 0;
-}
-.contact .contact-img img {
-  width: 100%;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-}
-
-@media only screen and (min-width: 600px) {
-  .our-values {
-    display: flex;
-    align-items: center;
-    -moz-column-gap: 9vw;
-         column-gap: 9vw;
-  }
-  .our-values .pic-top {
-    flex: 2;
-  }
-  .our-values .our-values__txt {
-    margin: 0;
-    width: -moz-max-content;
-    width: max-content;
-    flex: 1;
-  }
-  .our-values .our-values__txt ul li {
-    text-wrap: nowrap;
-  }
-  .contact {
-    display: flex;
-    align-items: center;
-    -moz-column-gap: 6vw;
-         column-gap: 6vw;
-  }
-  .contact div {
-    flex: 1;
-  }
-  .contact .contact-img {
-    margin-top: 0;
-  }
-}/*# sourceMappingURL=about-us.css.map */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <script src="js/contact-dropdown.js" defer></script>
+    <script src="js/hamburger-menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-pic">
+            <img src="Images/general/logo.webp" alt="">
+        </div>
+        <div class="header-dropdown">
+            <a href="index.html">Home</a>
+            <a href="about-us.html" class="current-page">Über uns</a>
+            <a href="contact-us.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <button class="hamburger-menu">
+            <hr><hr><hr>
+        </button>
+        <div class="buttons">
+            <button class="btn-home txt-smaller" onclick="location.href = 'index.html'">Home</button>
+            <button class="btn-contact txt-smaller" onclick="location.href = 'contact-us.html'">Kontakt</button>
+        </div>
+    </header>
+    <section class="hero">
+        <p class="h2">
+            Über uns
+        </p>
+        <p class="h3">
+            Der Natur und Umwelt zuliebe
+        </p>
+        <p class="txt-default">
+            Nachhaltiger Kaffee ist unsere Leidenschaft wir arbeiten nur mit ausgewählten Kaffeebauern und Röstereien zusammen. Wir vermeiden Plastik und schreiben uns Umweltschutz auf die Fahne. Das schmeckt und fühlt man. Teilen sie unsere Euphorie für Kaffee. Wir freuen uns auf ihren Besuch.
+        </p>
+    </section>
+    <section class="our-values">
+        <div class="pic-top">
+            <img src="Images/About us/aboutus-main.webp" alt="">
+        </div>
+        <div class="our-values__txt">
+            <p class="h3">
+                Unsere Werte
+            </p>
+            <ul>
+                <li class="txt-default">Die liebe zum Kaffee</li>
+                <li class="txt-default">Freundlichkeit</li>
+                <li class="txt-default">Gute gleichbleibende Qualität</li>
+                <li class="txt-default">Nachhaltigkeit</li>
+                <li class="txt-default">Regelmäßige Schulungen</li>
+            </ul>
+        </div>
+    </section>
+    <section class="images">
+        <div class="images-big">
+            <img src="Images/About us/aboutus-big.webp" alt="">
+        </div>
+        <div class="images-sec">
+            <div class="images-sec-top">
+                <div>
+                    <img src="Images/About us/aboutus-square1.webp" alt="">
+                </div>
+                <div>
+                    <img src="Images/About us/aboutus-square2.webp" alt="">
+                </div>
+            </div>
+            <div class="images-sec-bottom">
+                <img src="Images/About us/aboutus-bottom.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-txt">
+            <p class="h3">
+                Catering
+            </p>
+            <p class="txt-bigger">
+                Überraschen Sie ihre Gäste doch mal
+            </p>
+            <p class="txt-default">
+                Wir machen ihre Feier zu einem echten Erlebnis buchen sie unser rundum sorgloses Paket.
+                Feinste Kaffeespezialitäten, Kaltgetränke, Kuchen, belegte Brötchen, Waffeln, Bretzeln ganz wie sie wünschen.
+                Für Sitzplätze ca. 30 Personen und Stehtischen wird selbstverständlich gesorgt.
+                Modernes Geschirr und Besteck so wie schöne Tischdeko ist auch im Programm.
+                Und das Beste ist. Nettes Personal bringen wir auch noch mit.
+                Verwöhnen sie ihre Gäste sprechen sie uns an.
+            </p>
+            <div class="buttons">
+                <button class="btn-home txt-smaller" onclick="location.href = 'index.html'">Home</button>
+                <button class="btn-contact txt-smaller" onclick="location.href = 'contact-us.html'">Kontakt</button>
+            </div>
+        </div>
+        <div class="contact-img">
+            <img src="Images/About us/aboutus-end.webp" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="logo-pic">
+                <img src="Images/general/logo.webp" alt="">
+            </div>
+            <div class="social-media">
+                <img src="Images/general/instagram.svg" alt="">
+                <img src="Images/general/facebook.svg" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <a class="txt-smaller" href="index.html">Kleine Kaffeebohne</a>
+            <a class="txt-smaller" href="impressum.html">Impressum</a>
+            <a class="txt-smaller" href="about-us.html">Über uns</a>
+            <div class="footer-contact">
+                <div class="contact-dropdown hidden">
+                    <div>
+                        <a href="mailto:kleine-kaffeebohne@web.de" class="txt-smaller">
+                            Email: kleine-kaffeebohne@web.de
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+4917614971174" class="txt-smaller">
+                            Tel: +49 176-14971174
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="txt-smaller">
+                            Instagram: @kleine-Kaffeebohne
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="txt-smaller">
+                            Facebook: @kleine-Kaffeebohne
+                        </a>
+                    </div>
+                </div>
+                <a class="txt-smaller" href="contact-us.html">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
