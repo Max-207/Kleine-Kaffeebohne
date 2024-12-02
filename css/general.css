@@ -95,8 +95,9 @@ a {
 }
 
 .buttons {
-  -moz-column-gap: min(2vw, 1.3rem);
-       column-gap: min(2vw, 1.3rem);
+  -moz-column-gap: min(1vw, 0.65rem);
+       column-gap: min(1vw, 0.65rem);
+  display: flex;
 }
 .buttons button {
   color: inherit;
